@@ -1,0 +1,7 @@
+development:
+  database: mysql2://root:@localhost:3306/itservice
+  redis: redis://localhost:6379
+
+production:
+  database: mysql2://<%= ENV['MYSQL_USER'] %>:<%= ENV['MYSQL_PASSWORD'] %>@<%= ENV['MYSQL_HOST'] %>:3306/<%= ENV['MYSQL_DATABASE'] %>
+  redis: redis://<%= ENV['REDIS_HOST'] %>:6379

@@ -1,0 +1,11 @@
+source "https://rubygems.org"
+
+#gem "sinatra"
+gem "thin"
+gem "sinatra-sse"
+gem "sinatra-contrib"
+gem "rest-client"
+gem 'redis', '~>3.3.1'
+#gem "em-hiredis"
+gem "sequel"
+gem "mysql2"
