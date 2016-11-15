@@ -71,6 +71,9 @@ class EventServer < Sinatra::Base
 
 
     response['Access-Control-Allow-Origin'] = '*'
+    response['Cache-control'] = 'no-cache'
+    response['X-Accel-Buffering'] = 'no'
+
     sse_stream do |out|
       settings.connections << out
       settings.connected_users << user
